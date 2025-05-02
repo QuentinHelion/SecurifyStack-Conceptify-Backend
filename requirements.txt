@@ -1,2 +1,4 @@
 flask
-requests
+paramiko
+python-dotenv
+flask-cors
