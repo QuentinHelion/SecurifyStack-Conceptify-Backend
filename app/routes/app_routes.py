@@ -50,7 +50,7 @@ def get_logo(app_name):
     finally:
         sftp.close()
 
-@app_routes.route('/install/<app_name>', methods=['POST'])
+@app_routes.route('/install/<app_name>', methods=['POST','GET'])
 def install_app(app_name):
     sftp = connect_sftp()
     local_path = os.path.join(LOCAL_APP_DIR, app_name)
