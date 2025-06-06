@@ -11,5 +11,5 @@ CORS(app)
 app.register_blueprint(app_routes)
 
 if __name__ == '__main__':
-    os.makedirs(os.getenv("LOCAL_APP_DIR", "./downloaded_apps"), exist_ok=True)
-    app.run(debug=True, port=5000)
+    os.makedirs(os.getenv("LOCAL_APP_DIR", "../downloaded_apps"), exist_ok=True)
+    app.run(debug=True, port=5000, host='0.0.0.0')
